@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HALAMAN UTAMA (INDEX) -->
+    <div id="home-page" class="container">
+        <header>
+            <h1>Group Website</h1>
+            <p class="subtitle">Our Member</p>
+        </header>
+
+        <div class="member-grid">
+            <!-- Member 1 -->
+            <div class="card">
+                <div class="profile-img">
+                    <img src="c:\Users\fauza\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\86404DA1DEDBA2A25C5FBEF981CED49F191A92A8\transfers\2026-19\WhatsApp Image 2026-05-11 at 20.58.35.jpeg"
+                        alt="Member 1">
+                </div>
+                <h3>Muhamad Febrian</h3>
+                <button onclick="showProfile('profile-1')" class="btn">Read Profil</button>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="card">
+                <div class="profile-img">
+                    <img src="c:\Users\fauza\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\86404DA1DEDBA2A25C5FBEF981CED49F191A92A8\transfers\2026-19\WhatsApp Image 2026-05-11 at 21.08.42.jpeg"
+                        alt="Member 2">
+                </div>
+                <h3>Fajar Firman Firdaus</h3>
+                <button onclick="showProfile('profile-2')" class="btn">Read Profil</button>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="card">
+                <div class="profile-img">
+                    <img src="c:\Users\fauza\OneDrive\Gambar\WhatsApp Image 2026-05-11 at 21.06.57.jpeg" alt="Member 3">
+                </div>
+                <h3>Fauzan Ibnu Zaen N</h3>
+                <button onclick="showProfile('profile-3')" class="btn">Read Profil</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HALAMAN PROFIL 1 -->
+    <div id="profile-1" class="container profile-page" style="display: none;">
+        <div class="profile-detail-card">
+            <h1 class="profile-name">Muhamad Febrian</h1>
+            <div class="profile-flex">
+                <div class="profile-img-large">
+                    <img src="c:\Users\fauza\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\86404DA1DEDBA2A25C5FBEF981CED49F191A92A8\transfers\2026-19\WhatsApp Image 2026-05-11 at 20.58.35.jpeg"
+                        alt="Member 1">
+                </div>
+                <div class="profile-info">
+                    <p><strong>Student ID:</strong> 001202505021</p>
+                    <p><strong>Major:</strong> Informatics</p>
+                    <p><strong>Batch:</strong> 2025</p>
+                    <div class="background-section">
+                        <h4>Describe your background:</h4>
+                        <p>Isi deskripsi member 1 di sini. Ceritain apa aja bebas...</p>
+                    </div>
+                </div>
+            </div>
+            <button onclick="showHome()" class="btn-back">← Kembali</button>
+        </div>
+    </div>
+
+    <!-- HALAMAN PROFIL 2 -->
+    <div id="profile-2" class="container profile-page" style="display: none;">
+        <div class="profile-detail-card">
+            <h1 class="profile-name">Fajar Firman Firdaus</h1>
+            <div class="profile-flex">
+                <div class="profile-img-large">
+                    <img src="c:\Users\fauza\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\86404DA1DEDBA2A25C5FBEF981CED49F191A92A8\transfers\2026-19\WhatsApp Image 2026-05-11 at 21.08.42.jpeg"
+                        alt="Member 2"> <!-- GANTI FOTO -->
+                </div>
+                <div class="profile-info">
+                    <p><strong>Student ID:</strong> 001202505029</p>
+                    <p><strong>Major:</strong> Informatics</p>
+                    <p><strong>Batch:</strong> 2025</p>
+                    <div class="background-section">
+                        <h4>Describe your background:</h4>
+                        <p>Isi deskripsi member 2 di sini. Ceritain apa aja bebas...</p>
+                    </div>
+                </div>
+            </div>
+            <button onclick="showHome()" class="btn-back">← Kembali</button>
+        </div>
+    </div>
+
+    <!-- HALAMAN PROFIL 3 -->
+    <div id="profile-3" class="container profile-page" style="display: none;">
+        <div class="profile-detail-card">
+            <h1 class="profile-name">Fauzan Ibnu Zaen Nasution</h1>
+            <div class="profile-flex">
+                <div class="profile-img-large">
+                    <img src="c:\Users\fauza\OneDrive\Gambar\WhatsApp Image 2026-05-11 at 21.06.57.jpeg" alt="Member 3">
+                </div>
+                <div class="profile-info">
+                    <p><strong>Student ID:</strong> 001202505006</p>
+                    <p><strong>Major:</strong> Informatics</p>
+                    <p><strong>Batch:</strong> 2025</p>
+                    <div class="background-section">
+                        <h4>Describe your background:</h4>
+                        <p>Hello Guys!! my name is Fauzan ibnu Zaen Nasution, You can Call me Fauzan. i am students who
+                            focus on the field Web Application Development. In this group website project, I am
+                            responsible as UI/UX Design and Frontend Developer. When I'm not coding, I usually spend
+                            my time to Work or playing games. And we must know that the results will not betray the
+                            effort.</p>
+                    </div>
+                </div>
+            </div>
+            <button onclick="showHome()" class="btn-back">← Kembali</button>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT BUAT PINDAH HALAMAN -->
+    <script>
+        function showProfile(profileId) {
+            // Sembunyiin halaman utama
+            document.getElementById('home-page').style.display = 'none';
+            // Sembunyiin semua halaman profil (biar ga numpuk)
+            const profiles = document.querySelectorAll('.profile-page');
+            profiles.forEach(p => p.style.display = 'none');
+            // Munculin profil yang diklik
+            document.getElementById(profileId).style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+
+        function showHome() {
+            // Sembunyiin semua halaman profil
+            const profiles = document.querySelectorAll('.profile-page');
+            profiles.forEach(p => p.style.display = 'none');
+            // Munculin halaman utama
+            document.getElementById('home-page').style.display = 'block';
+        }
+    </script>
+
+</body>
+
+</html>
