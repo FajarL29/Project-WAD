@@ -6,7 +6,7 @@ $members = [
         'major' => 'Informatics',
         'batch' => '2025',
         'image' => 'images/febri.jpg',
-        'background' => 'Halo, saya Muhamad Febrian. Saya tertarik mempelajari pengembangan web dan terus berlatih membangun tampilan yang rapi dan mudah digunakan. Di project ini saya ikut berkontribusi dalam pembuatan website kelompok dan pengembangan ide kontennya.',
+        'background' => 'My name is Muhamad Febrian, and I am passionate about software and technology development. I enjoy creating various prototype projects, ranging from mobile applications and web development to hardware-based systems using platforms such as ESP32 and other IoT devices. I am highly interested in learning new technologies, improving my development skills, and building user-friendly, innovative solutions through both software and hardware integration.',
     ],
     2 => [
         'name' => 'Fajar Firman Firdaus',
