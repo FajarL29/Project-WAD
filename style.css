@@ -98,6 +98,15 @@ header h1 {
     height: 180px;
 }
 
+.photo-lower {
+    object-position: center 18%;
+}
+
+.photo-zoom {
+    transform: scale(1.15);
+    transform-origin: center;
+}
+
 .btn, .btn-back {
     display: inline-block;
     cursor: pointer;

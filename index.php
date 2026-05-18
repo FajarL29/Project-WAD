@@ -14,10 +14,10 @@ $members = [
         'major' => 'Informatics',
         'batch' => '2025',
         'image' => 'images/fajar.jpg',
-        'background' => 'Halo, saya Fajar Firman Firdaus. Saya sedang belajar Web Application Development dan ingin memahami alur pengembangan dari frontend sampai backend. Project ini saya gunakan untuk melatih struktur data, tampilan, dan logika dasar PHP.',
+        'background' => 'I am Fajar Firman Firdaus, a student with a strong passion for software development and IoT technology. Currently, I am actively deeply exploring frontend and backend development, as well as database management, to build integrated systems. With experience in creating various prototype projects—ranging from web and mobile applications to hardware-based systems using ESP32—I am always eager to explore new technologies and enhance my programming skills',
     ],
     3 => [
-        'name' => 'Fauzan Ibnu Zaen Nasution',
+        'name' => 'Fauzan Ibnu Z. N.',
         'student_id' => '001202505006',
         'major' => 'Informatics',
         'batch' => '2025',
@@ -55,7 +55,11 @@ $isDetailPage = $selectedMember !== null;
 
                 <div class="profile-flex">
                     <div class="profile-img-large">
-                        <img src="<?= htmlspecialchars($selectedMember['image']); ?>" alt="<?= htmlspecialchars($selectedMember['name']); ?>">
+                        <img
+                            src="<?= htmlspecialchars($selectedMember['image']); ?>"
+                            alt="<?= htmlspecialchars($selectedMember['name']); ?>"
+                            class="<?= $selectedId === 2 ? 'photo-zoom' : ($selectedId === 3 ? 'photo-lower' : ''); ?>"
+                        >
                     </div>
 
                     <div class="profile-info">
@@ -70,7 +74,7 @@ $isDetailPage = $selectedMember !== null;
                     </div>
                 </div>
 
-                <a href="index.php" class="btn-back">&larr; Kembali</a>
+                <a href="index.php" class="btn-back">&larr; Back</a>
             </div>
         <?php else: ?>
             <header>
@@ -83,7 +87,11 @@ $isDetailPage = $selectedMember !== null;
                 <?php foreach ($members as $id => $member): ?>
                     <article class="card">
                         <div class="profile-img">
-                            <img src="<?= htmlspecialchars($member['image']); ?>" alt="<?= htmlspecialchars($member['name']); ?>">
+                            <img
+                                src="<?= htmlspecialchars($member['image']); ?>"
+                                alt="<?= htmlspecialchars($member['name']); ?>"
+                                class="<?= $id === 2 ? 'photo-zoom' : ($id === 3 ? 'photo-lower' : ''); ?>"
+                            >
                         </div>
 
                         <h3><?= htmlspecialchars($member['name']); ?></h3>
